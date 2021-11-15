@@ -12,7 +12,7 @@ use Throwable;
 
 class ApiResponse
 {
-    static public function BaseAnswer($data,$status)
+    public function BaseAnswer($data,$status)
     {
         if ($status != 200)
             $data = [
@@ -28,7 +28,7 @@ class ApiResponse
         return response($data,$status);
     }
 
-    static public function render(Throwable $e)
+    public function render(Throwable $e)
     {
 
         if($e instanceof ModelNotFoundException){
