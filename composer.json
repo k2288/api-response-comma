@@ -1,0 +1,28 @@
+{
+    "name": "comma/api-response",
+    "description": "A Package for response of API",
+    "authors": [
+        {
+            "name": "Matin",
+            "email": "matin.eghbali74@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Comma\\ApiResponse\\" : "src/"
+        }
+    },
+    "require": {
+        "laravel/framework": "^8.40"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Raahin\\ApiResponse\\Provider\\ApiResponseServiceProvider"
+            ],
+            "aliases": {
+                "ApiResponse": "Raahin\\ApiResponse\\Facade\\ApiResponse"
+            }
+        }
+    }
+}
