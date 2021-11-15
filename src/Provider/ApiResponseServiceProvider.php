@@ -9,7 +9,7 @@ class ApiResponseServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind('api-response', function(){
+        $this->app->bind('ApiResponse', function(){
             return new ApiResponse;
         });
     }
