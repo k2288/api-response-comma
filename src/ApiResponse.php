@@ -75,8 +75,8 @@ class ApiResponse
         }
         else{
             $data = [
-                'status' => 404,
-                'message' => "Not Found"
+                'status' => 500,
+                'message' => $e->getMessage()
             ];
         }
 
