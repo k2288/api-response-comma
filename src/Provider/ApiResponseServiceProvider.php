@@ -1,8 +1,8 @@
 <?php
 
-namespace Comma\ApiResponse\Provider;
+namespace Raahin\ApiResponse\Provider;
 
-use Comma\ApiResponse\ApiResponse;
+use Raahin\ApiResponse\ApiResponse;
 use Illuminate\Support\ServiceProvider;
 
 class ApiResponseServiceProvider extends ServiceProvider

@@ -1,5 +1,5 @@
 <?php
-namespace Comma\ApiResponse;
+namespace Raahin\ApiResponse;
 
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Auth\AuthenticationException;

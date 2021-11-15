@@ -1,6 +1,6 @@
 <?php
 
-namespace Comma\ApiResponse\Facade;
+namespace Raahin\ApiResponse\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
