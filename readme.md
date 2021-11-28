@@ -48,7 +48,7 @@ php artisan vendor:publish
 
     public function render($request, Throwable $e)
     {
-        return ApiResponse::render($e);
+        return ApiResponse::render($request,$e);
     }
 ```
 
