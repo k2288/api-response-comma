@@ -49,7 +49,7 @@ php artisan vendor:publish
     public function render($request, Throwable $e)
     {
         if ($request->wantsJson()) {   //add Accept: application/json in request
-            return ApiResponse::render($request,$e);
+            $retval = ApiResponse::render($e);
         } else {
             $retval = parent::render($request, $e);
         }
