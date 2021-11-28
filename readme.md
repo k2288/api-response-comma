@@ -48,8 +48,14 @@ php artisan vendor:publish
 
     public function render($request, Throwable $e)
     {
-        return ApiResponse::render($e);
+        if ($request->wantsJson()) {   //add Accept: application/json in request
+            return ApiResponse::render($request,$e);
+        } else {
+            $retval = parent::render($request, $e);
+        }
+        return $retval;
     }
+
 ```
 
 و برای خروجی های وب سرویس خود از کد زیر استفاده کنید:
